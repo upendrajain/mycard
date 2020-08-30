@@ -1,0 +1,175 @@
+*{ margin:0;padding:0;box-sizing:border-box;font-family: 'Roboto', sans-serif;}
+
+#head
+{
+	width: 100%;
+	height:100vh;
+}
+.head_child
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.head_child img
+{
+	border: 4px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px red;
+}
+.head_child h1
+{
+	font-size: 1.5rem;
+	padding:10px;
+	position: relative;
+}
+.head_child h1::before
+{
+	content: "";
+	position: absolute;
+	top:100%;
+	left:50%;
+	transform: translateX(-50%);
+	width: 100px;
+	border:1px solid red;
+}
+.head_child .disabled
+{
+	color: #555555;
+	font-size: 14px;
+}
+.head_icon i
+{
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	color: #fff;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
+/*side-icon start*/
+.side_icon
+{
+	width: 100%;
+	height: 100vh;
+}
+.side_icon .phone
+{
+	position: relative;
+	width: 80px;
+	height:80px;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background: red;
+	clip-path: polygon(0 0, 100% 31%, 100% 64%, 0% 100%);
+}
+.side_icon .location
+{
+	position: relative;
+	width: 80px;
+	height:80px;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background: red;
+	clip-path: polygon(0 31%, 100% 0, 100% 100%, 0 64%);
+}
+.side_icon .mail
+{
+	position: relative;
+	width: 80px;
+	height:80px;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background: red;
+	clip-path: polygon(0 0, 100% 31%, 100% 64%, 0% 100%);
+}
+.side_icon .icon
+{
+	display: flex;
+	align-items: center;
+}
+/*social-btn*/
+/*footer start*/
+footer
+{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height:60px;
+	background-color: #fff;
+	box-shadow: 0 0 2px 0 #000;
+}
+.foot_icon .footer_menu
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+	overflow-x: hidden;
+}
+.footer_menu li
+{
+	font-size: 1.5rem;
+	display: block;
+	color: #555555;
+}
+.footer_menu li a
+{
+	color: red;
+}
+.footer_menu span
+{
+	font-size: 1rem;
+	display: block;
+}
+@media(max-width: 520px)
+{
+	.footer_menu li
+	{
+		font-size: 1.2rem;
+		display: block;
+		color: #555555;
+
+	}
+	.footer_menu span
+	{
+		font-size: 1rem;
+		display: block;
+	}
+}
+@media(max-width: 468px)
+{
+	.head_child .name1
+	{
+		font-size: 1.2rem;
+	}
+	.head_child .name2
+	{
+		font-size: 1rem;
+		text-align: center;
+		padding:0px 50px;
+	}
+	.side_icon .phone,
+	.side_icon .mail,
+	.side_icon .location
+	{
+		width: 60px;
+		height:80px;
+	}
+	.side_icon .icon span
+	{
+		font-size: 0.7rem;
+		margin-left: 10px;
+	}
+}
